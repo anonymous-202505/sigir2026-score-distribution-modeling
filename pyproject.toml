@@ -1,0 +1,31 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "score-distribution-model"
+version = "1.0.0"
+description = "An experimentation suite for predicting ranking quality in large-scale retrieval using score distribution modeling."
+authors = ["xxxx"]
+homepage = "https://example.net"
+repository = "https://example.net"
+readme = "README.md"
+license = "MIT"
+packages = [{ include = "sdm", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+click = "^8.1.7"
+torch = "^2.5.1"
+datasets = "^4.1.1"
+transformers = "^4.57.3"
+scipy = "^1.15.3"
+black = "^25.1.0"
+isort = "^6.0.1"
+xformers = "^0.0.30"
+matplotlib = "^3.10.7"
+seaborn = "^0.13.2"
+ir-datasets = "^0.5.11"
+
+[tool.poetry.scripts]
+sdm = "sdm.sdm:main"
