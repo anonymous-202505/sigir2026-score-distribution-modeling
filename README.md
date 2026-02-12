@@ -75,7 +75,7 @@ while accounting for millions of unseen background documents without encoding th
 
 ---
 
-## Where the Metric Implementations Live
+## Implementations of SDM-corrected ranking quality measures
 
 All implementations of ranking quality metrics integrating score distributions can be found [here](src/sdm/utils/score_distribution.py):
 
